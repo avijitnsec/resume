@@ -1,0 +1,173 @@
+% Professional Resume Template
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Avijit Das} \\ \vspace{8pt}
+    \small \faPhone\ +1-858-519-6587 $|$ 
+    \faEnvelope\ \href{mailto:avijitnsec@gmail.com}{\underline{avijitnsec@gmail.com}} $|$ 
+    \faLinkedin\ \href{https://www.linkedin.com/in/avijitnsec}{\underline{linkedin.com/in/avijitnsec}} $|$ 
+    \faMapMarker\ Boulder, CO
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Principal Software Engineer with 16+ years of expertise in medical devices, mobile platforms, and embedded systems. Demonstrated leadership in developing life-critical medical device software at Medtronic, with specialized proficiency in C/C++, Linux kernel development, and Android framework optimization. Proven success at Qualcomm advancing Snapdragon platform security and performance. Core competencies include system-level debugging, performance optimization, and cross-functional technical leadership.}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Principal Software Engineer}{Dec 2021 -- Present}
+      {Medtronic}{Boulder, CO}
+      \resumeItemListStart
+        \resumeItem{Lead software development for life-critical endotracheal intubation medical devices, architecting respiratory algorithms and safety features in C++ that directly impact patient outcomes}
+        \resumeItem{Engineer intuitive GUI interfaces optimizing clinical data presentation for healthcare professionals, balancing complex information display with operational simplicity under high-stress conditions}
+        \resumeItem{Architect end-to-end connectivity solutions enabling remote ventilator access, cloud data synchronization, and over-the-air software updates while maintaining strict medical device security standards}
+        \resumeItem{Develop real-time patient monitoring systems with Ethernet-based data collection and continuous vital sign tracking, ensuring sub-second latency for critical parameters}
+        \resumeItem{Design and implement packet tracking debugging tools for manufacturing validation, reducing integration defects by 35\% and accelerating quality assurance processes}
+        \resumeItem{Manage enterprise-scale medical device codebase using Git, establishing branching strategies and code review workflows ensuring FDA regulatory compliance}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Software Engineer}{Nov 2015 -- Dec 2021}
+      {Medtronic}{Carlsbad, CA}
+      \resumeItemListStart
+        \resumeItem{Developed embedded software for ICU ventilator systems, implementing advanced breathing technology algorithms in C++ for critical care applications}
+        \resumeItem{Designed comprehensive GUI frameworks for medical device displays, achieving optimal balance between clinical data presentation and user experience}
+        \resumeItem{Built secure connectivity device software for remote ventilator monitoring, implementing HIPAA-compliant data collection and cloud synchronization}
+        \resumeItem{Engineered patient monitoring capabilities with real-time data visualization, maintaining sub-second response times for life-critical parameters}
+        \resumeItem{Created automated debugging tools for manufacturing validation, improving quality assurance efficiency and reducing defect detection time}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Software Engineer}{Apr 2013 -- Nov 2015}
+      {Qualcomm Inc.}{San Diego, CA}
+      \resumeItemListStart
+        \resumeItem{Led SELinux/SEAndroid enablement on Snapdragon platforms for Android Lollipop and Marshmallow, architecting and enforcing comprehensive security policies across system services}
+        \resumeItem{Designed and implemented Crash on Denial framework for sepolicy violation auditing, significantly enhancing security posture across OEM device deployments}
+        \resumeItem{Achieved 20\% boot time optimization during SEAndroid implementation, addressing critical OEM performance requirements while maintaining security standards}
+        \resumeItem{Contributed to open source security framework development and collaborated with Android security community (contributions: avijitnsec@codeaurora.org)}
+        \resumeItem{Ported Trinity Linux system call fuzzer to Snapdragon architecture for comprehensive security vulnerability detection, identifying and resolving multiple critical exploits}
+        \resumeItem{Developed suite of vulnerability detection tools for stack, heap, data, and code analysis, strengthening platform security testing capabilities}
+        \resumeItem{Debugged complex Linux kernel issues and implemented kmemleak support to systematically track and resolve memory leaks across kernel subsystems}
+        \resumeItem{Analyzed and resolved critical Android framework issues including stability and security vulnerabilities, collaborating directly with Google engineering teams}
+        \resumeItem{Triaged high-priority issues across core Android subsystems: SurfaceFlinger, Camera, Telephony, Audio, and Video frameworks}
+        \resumeItem{Provided expert technical support to OEM partners, resolving launch-blocking issues and ensuring on-schedule product releases}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{May 2012 -- Apr 2013}
+      {STMicroelectronics}{Greater San Diego Area}
+      \resumeItemListStart
+        \resumeItem{Developed display drivers in command and video modes for NovaThor platform, implementing DebugFS support for enhanced kernel-level debugging}
+        \resumeItem{Led Android OS porting to Orly platform for set-top box applications, ensuring hardware compatibility and performance optimization}
+        \resumeItem{Provided critical onsite technical support to HTC for display subsystem issues, resolving launch-blocking problems}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Jun 2010 -- May 2012}
+      {Sasken Communication Technologies Ltd}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Successfully ported Android OS to Texas Instruments OMAP 3630 and 4430 platforms, optimizing for platform-specific hardware capabilities}
+        \resumeItem{Developed RTOS and RTS frameworks for DAVINCI and DAVINCIHD boards in C, implementing efficient real-time task scheduling}
+        \resumeItem{Profiled and optimized ION memory management in Android ICS, enabling successful ICS deployment on resource-constrained 512 MB RAM devices}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C, C++, Python, Perl, Shell Scripting, PHP} \\
+     \textbf{Operating Systems}{: Linux Kernel, Unix, RTOS, Android (Lollipop, Marshmallow, ICS)} \\
+     \textbf{Embedded Systems}{: ARM Architecture, Snapdragon SoC, OMAP, NovaThor, Device Drivers, BSP Development} \\
+     \textbf{Android Framework}{: SurfaceFlinger, Camera HAL, Telephony, Audio/Video, SELinux/SEAndroid, ION Memory} \\
+     \textbf{Development Tools}{: Git, GDB, DDMS, Trace32, kmemleak, DebugFS, Stack Trace Analysis, Fuzzing} \\
+     \textbf{Domain Expertise}{: Medical Device Software (FDA Compliance), Security Engineering, Performance Optimization} \\
+     \textbf{Engineering Practices}{: Code Review, Agile Development, Cross-functional Leadership, Open Source Contribution}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science and Engineering}{2005 -- 2009}
+      {West Bengal University of Technology}{Kolkata, India}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications \& Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Machine Learning Specialization}{: Supervised Learning, Unsupervised Learning, Advanced Learning Algorithms} \\
+     \textbf{Deep Learning}{: PyTorch for Deep Learning} \\
+     \textbf{Recognition}{: Qualstar Award (Qualcomm)}
+    }}
+ \end{itemize}
+
+\end{document}
